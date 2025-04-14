@@ -1,0 +1,333 @@
+/* Base Styling */
+#base {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+#header {
+    width: 100%;
+    height: 70px;
+    font-size: 24px;
+    font-style: italic;
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.signin-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.signIcon {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+
+.signinText {
+    cursor: pointer;
+    color: #f97316;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.signinText:hover {
+    text-decoration: underline;
+}
+
+/* Content */
+#content {
+    width: 100%;
+    height: calc(100% - 110px);
+    background-color: #f8f9fa;
+    text-align: left;
+    padding: 20px;
+}
+
+/* Footer */
+#footer {
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    font-style: italic;
+    background-color: #374151;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.copyrightText {
+    font-size: 10pt;
+    color: #ffffff;
+}
+
+.socialmediaIcon {
+    width: 16px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Typography */
+.text1 {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #f97316;
+}
+
+.text2 {
+    font-size: 32pt;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.text3 {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+/* Search Bar */
+.searchBar {
+    background: white;
+    border-radius: 15px;
+    width: 700px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.searchText,
+.searchLocation {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-right: 1px solid gray;
+    font-size: 12pt;
+    padding: 5px;
+}
+
+.searchButton {
+    height: 40px;
+    background: #14b8a6;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.searchButton:hover {
+    background: #0f766e;
+    transform: scale(1.05);
+}
+
+/* Popup */
+#popup {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 999;
+    display: none;
+}
+
+.popupWindow {
+    width: 350px;
+    height: auto;
+    position: relative;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.popupHeader {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #14b8a6;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.popupContent {
+    width: 100%;
+    padding: 15px;
+    background: #facc15;
+}
+
+/* Input Fields */
+.label {
+    display: block;
+    font-weight: bold;
+    padding: 10px 0px 3px 0px;
+}
+
+.inputField {
+    width: 100%;
+    height: 40px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.inputField:focus {
+    border-color: #14b8a6;
+    box-shadow: 0px 0px 10px rgba(20, 184, 166, 0.5);
+    outline: none;
+}
+
+/* Forgot Password */
+.forgotPassword {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.forgotPassword label {
+    color: #f97316;
+    cursor: pointer;
+}
+
+.forgotPassword label:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.signinButton,
+.registerButton {
+    width: 100%;
+    height: 40px;
+    background: #14b8a6;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.signinButton:hover,
+.registerButton:hover {
+    background: #0f766e;
+    transform: scale(1.05);
+}
+
+/* Additional Divs */
+.div1 {
+    width: 100%;
+    height: 50px;
+}
+
+.div2 {
+    width: 100%;
+    font-size: 10pt;
+    color: black;
+    text-align: center;
+}
+
+.div2 label {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #f97316;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.div2 label:hover {
+    color: rgba(222, 28, 28, 0.653);
+}
+
+/* Login and Signup Styling */
+.loginForm,
+.signupForm {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.formTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.formGroup label {
+    display: block;
+    font-weight: bold;
+    color: #374151;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #d1d5db;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.formGroup input:focus {
+    border-color: #14b8a6;
+    box-shadow: 0px 0px 10px rgba(20, 184, 166, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .searchBar {
+        width: 100%;
+    }
+
+    .signinButton,
+    .registerButton {
+        font-size: 12px;
+    }
+
+    .popupWindow {
+        width: 90%;
+    }
+}
